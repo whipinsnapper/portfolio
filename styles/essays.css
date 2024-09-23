@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --background-color: #fdfdfd;
+    --text-color: #071013;
+    --pale-text-color: #071013a8;
+    --paler-text-color: #0710137d;
+    --accent-color: #0090C1;
+    --paragraph-font: Radley, sans-serif;
+    --heading-font: Merriweather, sans-serif;
+    --subheading-font: Playfair Display, sans-serif;
+    --navbar-font: Merriweather, sans-serif;
+    
+    background-color: var(--background-color);
+}
+
+body {
+    margin: 0 auto;
+}
+
+#navbar {
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom-style: inset;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    height: 16.67px;
+    text-decoration: none;
+    font-family: var(--navbar-font);
+}
+
+#navbar img {
+    height: 20px;
+    margin: 0 auto;
+}
+
+#essay_list {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.essay_card {
+    border-style: ridge;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    height: fit-content;
+}
+
+.essay_card img {
+    width: 250px;
+}
+
+.essay_card h4 {
+    font-family: var(--paragraph-font);
+    font-weight: lighter;
+    font-size: 0.7em;
+    color: var(--paler-text-color);
+    margin: auto 0;
+    margin-bottom: 10px;
+}
+
+.essay_card a {
+    font-family: var(--subheading-font);
+    font-size: 1.4em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.essay_card h3 {
+    font-family: var(--heading-font);
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: var(--pale-text-color);
+}
+
+.name_and_date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.essay_card p {
+    font-family: var(--paragraph-font);
+    font-size: 0.8em;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: var(--accent-color);
+}
+
+.hidden {
+    display: none;
+}
